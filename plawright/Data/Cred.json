@@ -1,0 +1,108 @@
+{
+  "valid_login_user": [
+    {
+      "email": "sl863@yopmail.com",
+      "password": "Test@123",
+      "pin": "0000"
+    }
+  ],
+
+  "Invalid_user_password": [
+    {
+      "email": "sm102@yopmail.com",
+      "password": "Test11@123",
+      "pin": "0000"
+    }
+  ],
+
+  "Invalid_user_pin": [
+    {
+      "email": "sm102@yopmail.com",
+      "password": "Test@123",
+      "pin": "1111"
+    }
+  ],
+
+  "empty_password_login": [
+    {
+      "email": "sm102@yopmail.com",
+      "password": "",
+      "pin": "1111"
+    }
+  ],
+
+  "empty_email_login": [
+    {
+      "email": "",
+      "password": "Test11@123",
+      "pin": "1111"
+    }
+  ],
+
+  "Initial_Buy_with_Bank": [
+    {
+      "email": "sl863@yopmail.com",
+      "password": "Test@123",
+      "pin": "0000"
+    },
+    {
+      "email": "sl1476@yopmail.com",
+      "password": "Test@123",
+      "pin": "0000"
+    },
+    {
+      "email": "sl636@yopmail.com",
+      "password": "Test@123",
+      "pin": "0000"
+    },
+    {
+      "email": "sl416@yopmail.com",
+      "password": "Test@123",
+      "pin": "0000"
+    },
+    {
+      "email": "sl58@yopmail.com",
+      "password": "Test@123",
+      "pin": "0000"
+    },
+    {
+      "email": "sl1676@yopmail.com",
+      "password": "Test@123",
+      "pin": "0000"
+    },
+    {
+      "email": "sl1355@yopmail.com",
+      "password": "Test@123",
+      "pin": "0000"
+    },
+    {
+      "email": "sl804@yopmail.com",
+      "password": "Test@123",
+      "pin": "0000"
+    },
+    {
+      "email": "sl957@yopmail.com",
+      "password": "Test@123",
+      "pin": "0000"
+    },
+    {"email": "sm100@yopmail.com",
+      "password": "Test@123",
+      "pin": "0000"}
+  ],
+
+  "Initial_Buy_with_Wallet_Balance": [
+    {
+      "email": "zihikuk@yopmail.com",
+      "password": "Test@123",
+      "pin": "0000"
+    }
+  ],
+
+  "Initial_Buy_Insufficient_wallet_Balance": [
+    {
+      "email": "visy@yopmail.com",
+      "password": "Test@123",
+      "pin": "0000"
+    }
+  ]
+}
