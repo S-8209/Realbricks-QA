@@ -13,9 +13,6 @@ def page():
         page.close()
         context.close()
         browser.close()
-# def test_google(page):
-#     page.goto("https://google.com")
-#     page.pause()
 @pytest.fixture
 def page(browser):
     """Open a fresh tab before each test, close it after"""
