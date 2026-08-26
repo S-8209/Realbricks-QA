@@ -1,0 +1,25 @@
+# Virtual environments
+.venv/
+venv/
+env/
+plawright/
+
+# Python cache
+__pycache__/
+*.pyc
+
+# Pytest
+.pytest_cache/
+
+# Test artifacts (regenerated every run — don't commit)
+screenshots/
+reports/
+test-results/
+playwright-report/
+
+# Editor
+.vscode/
+*.swp
+
+# Secrets
+.env
