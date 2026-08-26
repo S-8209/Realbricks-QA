@@ -166,8 +166,7 @@ class TestBalanceTransaction:
         assert transaction_detail_data["order_status"] in VALID_TRANSACTION_STATUSES,\
             f"Invalid Order status :{transaction_detail_data["order_status"]}"
         assert transaction_detail_data["trade_type"] in VALID_TRADE_TYPES,\
-            f" In valid trade types :"{transaction_detail_data["trade_type"]}
-        assert
+            f" In valid trade types :{transaction_detail_data["trade_type"]}"
         
         print(
             transaction_detail_data["order_number"], '\n',
