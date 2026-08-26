@@ -2,19 +2,15 @@ name: Realbricks Playwright Tests
 
 on:
   push:
-    branches: [ master, main ]
+    branches: [ master, main, ci/github-actions-setup ]
   pull_request:
-    branches: [ master, main ]
+    branches: [ master, main, ci/github-actions-setup ]
   workflow_dispatch:
 
 jobs:
   test:
     runs-on: ubuntu-latest
     timeout-minutes: 30
-
-    defaults:
-      run:
-        working-directory: tests
 
     env:
       HEADLESS: "true"
@@ -28,7 +24,7 @@ jobs:
         with:
           python-version: "3.12"
           cache: "pip"
-          cache-dependency-path: tests/requirements.txt
+          cache-dependency-path: requirements.txt
 
       - name: Install Python dependencies
         run: |
@@ -48,7 +44,7 @@ jobs:
         uses: actions/upload-artifact@v4
         with:
           name: junit-report
-          path: tests/reports/junit.xml
+          path: reports/junit.xml
           retention-days: 14
 
       - name: Upload failure screenshots
@@ -56,5 +52,5 @@ jobs:
         uses: actions/upload-artifact@v4
         with:
           name: failure-screenshots
-          path: tests/screenshots/
+          path: screenshots/
           retention-days: 14
