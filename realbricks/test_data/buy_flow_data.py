@@ -17,8 +17,7 @@ calculation_data = [
     (SHARE_TYPE_CUSTOM, 50)
     ]
 share_options2=[    
-        (SHARE_TYPE_CUSTOM,  "0"),   # custom amount
- 
+        (SHARE_TYPE_CUSTOM,  "0"),   # custom amount 
 ]
 # ── Share options ──────────────────────────────────────────────────────────────
 # Format: (share_type, amount)
@@ -48,4 +47,7 @@ buy_with_wallet = [
 buy_with_bank = [
     (SHARE_TYPE_CUSTOM, "5", PAYMENT_BANK, "Chase"),
     (SHARE_TYPE_CUSTOM, "5", PAYMENT_BANK, "Bank of America"),
+]
+secondary_flow_data_buy = [
+    
 ]
