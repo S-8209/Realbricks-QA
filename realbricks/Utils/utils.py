@@ -23,16 +23,16 @@ import re
 def clean_value(value: str) -> float:
     if not value:
         return 0.0
-    
-    # Split off parenthetical content FIRST
-    value = value.split("(")[0].strip()
-    
+
+    # Remove any parenthetical content, wherever it appears
+    value = re.sub(r"\([^)]*\)", "", value).strip()
+
     cleaned = re.sub(r"[^0-9.\-]", "", value)
     cleaned = re.sub(r"-{2,}", "", cleaned)
-    
+
     if not cleaned or cleaned in ["-", "."]:
         return 0.0
-    
+
     return float(cleaned)
 
 def current_date() -> str:

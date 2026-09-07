@@ -14,3 +14,4 @@ def test_already_added_bank(logged_in_page):
     add_bank.add_bank_navigation()
     add_bank.add_bank_flow()
     expect(logged_in_page.get_by_text("Bank already exists.")).to_be_visible()
+    

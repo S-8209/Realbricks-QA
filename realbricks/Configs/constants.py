@@ -34,12 +34,12 @@ FORGET_PASSWORD_USER={
 }
 
 NEW_USER = {
-    "email"   : "sagarv1@yopmail.com",
+    "email"   : "sen@yopmail.com",
     "password": DEFAULT_PASSWORD,
     "pin"     : DEFAULT_PIN,
 }
 B_T_USER={
-    "email"   : "sagar1595@yopmail.com",
+    "email"   : "tyg@yopmail.com",
     "password": DEFAULT_PASSWORD,
     "pin"     : DEFAULT_PIN,
     
@@ -102,6 +102,7 @@ TRANSACTION_TYPE_SECONDARY_BUY = "Buy"
 TRANSACTION_TYPE_SECONDARY_SELL= "Sell"
 TRANSACTION_TYPE_DIVIDEND      = "Dividend"
 TRANSACTION_TYPE_WITHDRAWAL    = "Withdrawal"
+TRANSACTION_TYPE_DEPOSIT       = "Deposit"
 
 # Share type filter options
 SHARE_TYPE_FILTER_ALL       = "All"
@@ -127,3 +128,5 @@ VALID_TRADE_TYPES = [
     "Dividend",
     "Net Proceeds"
 ]
+BALANCE_TRANSACTION_NO_DATA_MESSAGE = "No transactions found"
+BALANCE_TRANSACTION_FILTER_NO_RESULTS_MESSAGE = "Applied filters have no transactions"
